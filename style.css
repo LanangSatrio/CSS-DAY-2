@@ -1,0 +1,103 @@
+htmk, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: brown;
+    transition: 0.3s;
+}
+.navigasi{
+      border: dashed 1px green;
+      padding: 20px;
+      border-radius: 10px;
+}
+.navigasi a{
+    align-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.navigasi a:hover{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.link a:hover{
+    color: blueviolet;
+    font-size: 15px;
+}
+
+/* content */
+
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding-block: 10px;
+    margin-bottom: 12px;
+    padding: 10px;
+    margin-left: 12px;
+    transition: 0.3s;
+
+}
+
+li:hover{
+    background-color: yellowgreen;
+
+}
+
+
+@media (min-width: 800px) {
+    .content{
+    display: flex;
+    align-items: flex-start; /* biar layanan rata atas, sejajar judul "Tentang Restoran kami" */
+}
+
+.kiri{
+    flex: 3;            /* lebar kolom kiri (artikel + foto) */
+    display: flex;
+    flex-direction: column; /* artikel di atas, foto di bawahnya */
+    order: 1;
+}
+
+.layanan{
+    flex: 1;
+    order: 2;
+}
+
+ul{
+    display: block;
+}
+
+.menu{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.daftar{
+    flex: 5;
+    order: 2;
+}
+
+.Menu-makanan{
+    flex: 1;
+    order: 1;
+}
+
+.Menu-minuman{
+    flex: 1;
+    order: 3;
+}
+
+}
+
+
+
+
+
+/* menu */
